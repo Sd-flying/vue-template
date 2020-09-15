@@ -1,0 +1,45 @@
+/*选项卡样式start*************************************************************************/
+/deep/.el-tabs--border-card{
+    background: transparent;
+    border:none;
+}
+
+/deep/ .el-tabs--border-card>.el-tabs__header .el-tabs__item.is-active{
+    background: rgba(0,187,169,1);
+    box-shadow: 0px 0px 10px rgba(0,187,169,0.4);
+    border-radius: 4px;
+    color: #fff;
+    z-index: 999;
+}
+/deep/.el-tabs--border-card>.el-tabs__header{
+    background: #fff;
+    height:54px;
+    line-height: 54px;
+    border-radius: 5px;
+}
+/deep/ .el-tabs--border-card>.el-tabs__header .el-tabs__item:not(.is-disabled):hover{
+    background: rgba(0,187,169,1);
+    box-shadow: 0px 0px 10px rgba(0,187,169,0.4);
+    border-radius: 4px;
+    color: #fff;
+    z-index: 999;
+}
+/deep/ .el-tabs--border-card>.el-tabs__header .el-tabs__item{
+    background:rgba(245,247,249,1);
+    box-shadow:0px 0px 10px rgba(0,0,0,0.2);
+    border-radius:4px;
+    margin-left: -8px;
+    height:34px;
+    line-height: 34px;
+
+}
+/deep/.el-tabs__nav{
+    margin-left:10px;
+}
+/deep/.el-tabs--border-card>.el-tabs__content{
+    padding:0 !important;
+}
+/deep/ .crud-opts-right{
+    display: none !important;
+}
+/*选项卡样式end*************************************************************************/

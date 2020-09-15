@@ -1,0 +1,500 @@
+@import "index";
+@import "variables";
+
+/*  按钮样式  */
+.button-isClick{
+    background:rgba(0,187,169,1);
+    box-shadow:0px 0px 10px rgba(0,187,169,0.4);
+    color: #fff;
+    border: 1px solid #0A9E90;
+    min-width: 76px;
+    font-size: 12px;
+    font-family: Microsoft YaHei;
+}
+/*  查看历史按钮样式  */
+.button-history{
+    background:#01BBA9;
+    box-shadow:0px 0px 10px rgba(0,187,169,0.4);
+    color: #fff;
+    border: 1px solid #01BBA9;
+    min-width: 76px;
+    font-size: 12px;
+    font-family: Microsoft YaHei;
+}
+/*  按钮悬浮样式  */
+.button-noClick{
+    background:rgba(245,247,249,1);
+    color: #00BBA9;
+    border: 1px solid #0A9E90;
+}
+// 修改element按钮
+   .common-scss{
+.el-button:hover{
+    background:rgba(245,247,249,1);
+    color: #00BBA9;
+    border: 1px solid #0A9E90;
+}
+.el-button:focus {
+    background:rgba(0,187,169,1);
+    box-shadow:0px 0px 10px rgba(0,187,169,0.4);
+    color: white;
+    border: 1px solid #0A9E90;
+}
+}
+
+//-------------工具栏部分图标------START--------
+/*
+图片路径： ../images/common
+Example:
+  <el-button class="filter-item" type="text" icon="el-icon-my-add">新增</el-button>
+*/
+// 初始化
+   .el-icon-my-initialization{
+       background: url(../images/common/toolbars_ic_initializing.png) center no-repeat;
+       background-size: cover;
+   }
+.el-icon-my-initialization:before{ //为图片添加占位符
+content: "替";
+    font-size: 12px;
+    visibility: hidden;
+}
+
+// 新增
+   .el-icon-my-add{
+       background: url(../images/common/add.png) center no-repeat;
+       background-size: cover;
+   }
+.el-icon-my-add:before{ //为图片添加占位符
+content: "替";
+    font-size: 12px;
+    visibility: hidden;
+}
+
+// 修改
+   .el-icon-my-edit{
+       background: url(../images/common/edit.png) center no-repeat;
+       background-size: cover;
+   }
+.el-icon-my-edit:before{  //为图片添加占位符
+content: "替";
+    font-size: 12px;
+    visibility: hidden;
+}
+
+//删除
+  .el-icon-my-delete{
+      background: url(../images/common/delete.png) center no-repeat;
+      background-size: cover;
+  }
+.el-icon-my-delete:before{  //为图片添加占位符
+content: "替";
+    font-size: 12px;
+    visibility: hidden;
+}
+
+//发布
+  .el-icon-my-publish{
+      background: url(../images/common/publish.png) center no-repeat;
+      background-size: cover;
+  }
+.el-icon-my-publish:before{ //为图片添加占位符
+content: "替";
+    font-size: 12px;
+    visibility: hidden;
+}
+
+//取消发布
+  .el-icon-my-cancelPublish{
+      background: url(../images/common/cancelPublish.png) center no-repeat;
+      background-size: cover;
+  }
+.el-icon-my-cancelPublish:before{ //为图片添加占位符
+content: "替";
+    font-size: 12px;
+    visibility: hidden;
+}
+
+//巡视结束
+  .el-icon-my-tourOver{
+      background: url(../images/common/toolbars_ic_tour-over.png) center no-repeat;
+      background-size: cover;
+  }
+.el-icon-my-tourOver:before{ //为图片添加占位符
+content: "替";
+    font-size: 12px;
+    visibility: hidden;
+}
+//任务执行
+  .el-icon-my-taskExe{
+      background: url(../images/common/ic_mission-accomplished.png) center no-repeat;
+      background-size: cover;
+  }
+.el-icon-my-taskExe:before{ //为图片添加占位符
+content: "替";
+    font-size: 12px;
+    visibility: hidden;
+}
+
+//详情内容
+  .el-icon-my-detail{
+      background: url(../images/common/detail.png) center no-repeat;
+      background-size: cover;
+  }
+.el-icon-my-detail:before{  //为图片添加占位符
+content: "替";
+    font-size: 12px;
+    visibility: hidden;
+}
+
+//导出
+  .el-icon-my-download{
+      background: url(../images/common/download.png) center no-repeat;
+      background-size: cover;
+  }
+.el-icon-my-download:before{  //为图片添加占位符
+content: "替";
+    font-size: 12px;
+    visibility: hidden;
+}
+
+//转缺陷
+  .el-icon-my-error{
+      background: url(../images/common/error.png) center no-repeat;
+      background-size: cover;
+  }
+.el-icon-my-error:before{ //为图片添加占位符
+content: "替";
+    font-size: 12px;
+    visibility: hidden;
+}
+
+//状态变更
+  .el-icon-my-change{
+      background: url(../images/common/ic_status-change.png) center no-repeat;
+      background-size: cover;
+  }
+.el-icon-my-change:before{ //为图片添加占位符
+content: "替";
+    font-size: 12px;
+    visibility: hidden;
+}
+
+//保存
+  .el-icon-my-save{
+      background: url(../images/common/toolbars_ic_save.png) center no-repeat;
+      background-size: cover;
+  }
+.el-icon-my-save:before{ //为图片添加占位符
+content: "替";
+    font-size: 12px;
+    visibility: hidden;
+}
+
+.el-button.is-disabled.el-button--text{
+    opacity: 0.5;
+    filter:alpha(opacity=50);
+}
+//向左
+  .el-icon-my-left{
+      width:26px;
+      height:26px;
+      display:block;
+      background: url(../images/xstask/left.png);
+      background-size: cover;
+  }
+.el-icon-my-left:before{ //为图片添加占位符
+content: "替";
+    font-size: 12px;
+    visibility: hidden;
+}
+//向右
+  .el-icon-my-right{
+      width:26px;
+      height:26px;
+      display:block;
+      background: url(../images/xstask/right.png);
+      background-size: cover;
+  }
+.el-icon-my-right:before{ //为图片添加占位符
+content: "替";
+    font-size: 12px;
+    visibility: hidden;
+}
+//批量执行
+  .el-icon-my-batch-execution{
+      background: url(../images/common/toolbars_ic_execution.png) center no-repeat;
+      background-size: cover;
+  }
+.el-icon-my-batch-execution:before{ //为图片添加占位符
+content: "替";
+    font-size: 12px;
+    visibility: hidden;
+}
+//消缺验收
+  .el-icon-my-check{
+      background: url(../images/common/ic_acceptance.png) center no-repeat;
+      background-size: cover;
+  }
+.el-icon-my-check:before{ //为图片添加占位符
+content: "替";
+    font-size: 12px;
+    visibility: hidden;
+}
+//任务详情
+  .el-icon-my-task-detail{
+      background: url(../images/common/ic_task-details.png) center no-repeat;
+      background-size: cover;
+  }
+.el-icon-my-task-detail:before{ //为图片添加占位符
+content: "替";
+    font-size: 12px;
+    visibility: hidden;
+}
+//退回
+  .el-icon-my-send-back{
+      background: url(../images/common/ic_return.png) center no-repeat;
+      background-size: cover;
+  }
+.el-icon-my-send-back:before{ //为图片添加占位符
+content: "替";
+    font-size: 12px;
+    visibility: hidden;
+}
+//消缺处理
+  .el-icon-my-deal{
+      background: url(../images/common/ic_elimination.png) center no-repeat;
+      background-size: cover;
+  }
+.el-icon-my-deal:before{ //为图片添加占位符
+content: "替";
+    font-size: 12px;
+    visibility: hidden;
+}
+//提交审核
+  .el-icon-my-commit-check{
+      background: url(../images/common/ic_review.png) center no-repeat;
+      background-size: cover;
+  }
+.el-icon-my-commit-check:before{ //为图片添加占位符
+content: "替";
+    font-size: 12px;
+    visibility: hidden;
+}
+//终止申请
+  .el-icon-my-end-apply{
+      background: url(../images/common/ic_termination.png) center no-repeat;
+      background-size: cover;
+  }
+.el-icon-my-end-apply:before{ //为图片添加占位符
+content: "替";
+    font-size: 12px;
+    visibility: hidden;
+}
+//流程图
+  .el-icon-my-flow-diagram{
+      background: url(../images/common/ic_flow-chart.png) center no-repeat;
+      background-size: cover;
+  }
+.el-icon-my-flow-diagram:before{ //为图片添加占位符
+content: "替";
+    font-size: 12px;
+    visibility: hidden;
+}
+//审核日志
+  .el-icon-my-check-log{
+      background: url(../images/common/ic_audit-log.png) center no-repeat;
+      background-size: cover;
+  }
+.el-icon-my-check-log:before{ //为图片添加占位符
+content: "替";
+    font-size: 12px;
+    visibility: hidden;
+}
+
+//工具器领取
+  .el-icon-my-tool-machine-receive{
+      background: url(../images/common/tool_machine_receive.png) center no-repeat;
+      background-size: cover;
+  }
+.el-icon-my-tool-machine-receive:before{ //为图片添加占位符
+content: "替";
+    font-size: 12px;
+    visibility: hidden;
+}
+
+//工具器归还
+  .el-icon-my-tool-machine-return{
+      background: url(../images/common/tool_machine_return.png) center no-repeat;
+      background-size: cover;
+  }
+.el-icon-my-tool-machine-return:before{ //为图片添加占位符
+content: "替";
+    font-size: 12px;
+    visibility: hidden;
+}
+
+//无人机巡检报告
+  .el-icon-my-unmaned-machine-report{
+      background: url(../images/common/ic_inspection-report.png) center no-repeat;
+      background-size: cover;
+  }
+.el-icon-my-unmaned-machine-report:before{ //为图片添加占位符
+content: "替";
+    font-size: 12px;
+    visibility: hidden;
+}
+
+
+//-------------工具栏部分图标------END--------
+
+//弹出框标题样式优化
+  .el-dialog__title{
+      font-size: 12px !important;
+      color:#333 !important;
+&:before{
+     content: "";
+     display: inline-block;
+     width:46px;
+     height:18px;
+     background:url(../images/common/tk-left.png);
+     position: relative;
+     top:6px;
+     right:5px;
+ }
+&:after{
+     content: "";
+     display: inline-block;
+     width:46px;
+     height:18px;
+     background:url(../images/common/tk-right.png);
+     position: relative;
+     top:6px;
+     right:-7px;
+ }
+}
+.el-dialog__header{
+    text-align: left;
+    padding: 10px;
+    padding-bottom: 10px;
+    background: #efeff5;
+    font-size:12px;
+    font-family:Microsoft YaHei;
+    border-radius: 5px 5px 0px 0px;
+}
+.el-dialog{
+    border-radius: 5px;
+    border: 1px solid #E2FFFC;
+}
+.el-dialog__headerbtn{
+    top:15px !important;
+}
+.confirmBtn{
+    min-width: 70px;
+    padding:8px 20px;
+    box-sizing: border-box;
+    background:rgba(10,158,144,1);
+    box-shadow:0px 0px 10px rgba(10,158,144,0.4);
+    border-radius:4px;
+    font-size:12px;
+    font-family:Microsoft YaHei;
+    margin:0;
+    color:#fff;
+}
+.confirmBtn:hover{
+    background: #2adbca;
+    color:#fff;
+
+}
+.cancelBtn{
+    min-width: 70px;
+    padding:8px 20px;
+    box-sizing: border-box;
+    background:rgba(159,176,188,1);
+    box-shadow:0px 0px 10px #9fb0bc66;
+    border-radius:4px;
+    font-size:12px;
+    font-family:Microsoft YaHei;
+    color:#fff !important;
+    margin:0;
+}
+.cancelBtn:hover{
+    background: #BDC5CC;
+    color:#fff;
+
+}
+
+
+//-------------table表格样式修改------START--------
+  .el-select-dropdown__item.selected{
+      color: #00BBA9;
+  }
+
+.el-pagination{
+    background: #F5F7F9;
+    margin-top: 10px;
+}
+.el-pagination .el-icon-arrow-left:before{
+    content: url("../images/icon_l.png");
+}
+.el-pagination .el-icon-arrow-right:before{
+    content: url("../images/icon_r.png");
+}
+.el-pagination .el-pager li.active{
+    color: #00BBA9;
+}
+.el-table th{
+    background: #F5F7F9;
+}
+.el-table .el-table__body-wrapper .el-table__row{
+    background: #FFFFFF;
+}
+.el-table .el-table__body-wrapper .el-table__row:nth-child(2n){
+    background: #FAFBFE;
+}
+.el-table--enable-row-hover .el-table__body tr:hover>td{
+    background:rgba(0,179,192,0.1);
+}
+.el-table thead {
+    color: #012319;
+}
+.el-checkbox__input.is-indeterminate .el-checkbox__inner{
+    background-color: #0db5a3;
+    border-color: #0db5a3;
+}
+.el-checkbox__input.is-checked .el-checkbox__inner{
+    background-color: #0db5a3;
+    border-color: #0db5a3;
+}
+//-------------table表格样式修改------END--------
+
+//-------------下拉框样式修改------START--------
+//  .el-input{
+    //    height:32px;
+    //    line-height: 32px;
+    // }
+.vue-treeselect__control{
+    height: 32px !important;
+    border: 1px solid #dcdce6 !important;
+    border-radius: 4px !important;
+}
+.vue-treeselect__single-value{
+    font-size:12px;
+}
+//-------------下拉框样式修改------END--------
+//菜单图标颜色更改
+  .el-icon-arrow-down:before{
+      color:#fff;
+  }
+// 下拉框字体大小
+   .el-select-dropdown__item{
+       font-size:12px !important;
+   }
+.el-dialog__close:before{
+    color: rgb(50,50,50);
+    font-size: 18px;
+    font-weight: bold;
+}
+.el-icon-close:before{
+    font-size: 18px;
+    font-weight: bold;
+}
