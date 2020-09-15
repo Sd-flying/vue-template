@@ -1,4 +1,4 @@
-
+技术点： vue全家桶、dataV、openlayer
 
 ```
 npm install
